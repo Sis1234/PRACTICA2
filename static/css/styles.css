@@ -1,0 +1,119 @@
+.Principal {
+    font-style: italic;
+    font-family:cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background:linear-gradient(120deg, black, rgb(9, 88, 124));
+    text-align: left;
+}
+.ins{
+    text-align: center;
+    background:linear-gradient(120deg, rgb(97, 57, 121), rgb(124, 9, 89));
+
+}
+
+.tprin {
+    font-size: 36px; 
+    font-weight: bold; 
+    text-align: center; 
+    margin-bottom: 20px; 
+    background-color: rgba(70, 130, 180, 0.7); 
+    padding: 10px 10px 10px 10px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.3s; 
+}
+
+.tprin:hover {
+    transform: scale(1.05); 
+}
+
+
+
+h1{
+    color: #333;
+    text-align: center;
+
+
+}
+
+
+
+.t {
+    font-size: 36px; 
+    font-weight: bold; 
+    text-align: center; 
+    margin-bottom: 20px; 
+    background-color: rgba(87, 21, 62, 0.7); 
+    padding: 10px 10px 10px 10px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 15px rgb(255, 244, 244); 
+    transition: transform 0.3s; 
+    color: white;
+    font-style: italic;
+    font-family:cursive;
+}
+
+.t:hover {
+    transform: scale(1.05); 
+}
+.titulo{
+    color:aqua;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    padding: 0px 35px;
+    text-align: left;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+button {
+    background-color: rgba(53, 23, 109, 0.9); 
+    color: white; 
+    border: #6883ac;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    margin: 10px; 
+    cursor: pointer;
+    border-radius: 5px; 
+    transition: background-color 0.3s, transform 0.3s;
+    font-style: italic;
+    font-family:cursive;
+}
+
+button:hover {
+    background-color: rgba(70, 130, 180, 1); 
+    transform: scale(1.05); 
+}
+table {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-bottom: 20px; 
+}
+
+th, td {
+    border: 1px solid #ddd; 
+    padding: 8px; 
+    text-align: left; 
+}
+
+th {
+    background-color: #0c0629; 
+    color: white; 
+}
+h2{
+    color: white;
+    font-family: cursive;
+    font-style: italic;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #f1f1f1; 
+}

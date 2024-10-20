@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar Datos</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body class="ins">
+    <h1 class="t">Datos Registrados</h1>
+
+    <h2>Inscripción de Cursos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Curso</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in data_store['inscripcion_curso'] %}
+                <tr>
+                    <td>{{ item.nombre }}</td>
+                    <td>{{ item.apellidos }}</td>
+                    <td>{{ item.curso }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h2>Registro de Usuarios</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Correo</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in data_store['registro_usuarios'] %}
+                <tr>
+                    <td>{{ item.nombre }}</td>
+                    <td>{{ item.apellidos }}</td>
+                    <td>{{ item.correo }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h2>Registro de Productos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Categoría</th>
+                <th>Existencia</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in data_store['registro_productos'] %}
+                <tr>
+                    <td>{{ item.producto }}</td>
+                    <td>{{ item.categoria }}</td>
+                    <td>{{ item.existencia }}</td>
+                    <td>{{ item.precio }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h2>Registro de Libros</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Resumen</th>
+                <th>Medio</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in data_store['registro_libros'] %}
+                <tr>
+                    <td>{{ item.titulo }}</td>
+                    <td>{{ item.autor }}</td>
+                    <td>{{ item.resumen }}</td>
+                    <td>{{ item.medio }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ url_for('index') }}"><button>Volver al Menú Principal</button></a>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body class="Principal">
+    <h1 class="tprin">Bienvenido a la Página Principal</h1>
+
+    <div class="button-container">
+        <a href="{{ url_for('inscripcion_curso') }}"><button>Inscripción de Curso</button></a>
+        <a href="{{ url_for('registro_usuarios') }}"><button>Registro de Usuarios</button></a>
+        <a href="{{ url_for('registro_productos') }}"><button>Registro de Productos</button></a>
+        <a href="{{ url_for('registro_libros') }}"><button>Registro de Libros</button></a>
+        <a href="{{ url_for('mostrar_datos') }}"><button>Mostrar Datos</button></a>
+    </div>
+
+</body>
+</html>
+
